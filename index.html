@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChessOS</title>
+<meta name="description" content="ChessOS is a tiny 64-bit operating system that does one thing: play chess. It boots straight from a USB stick, CD or BM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --panel: #0b0b0b;
+    --line: #2a2a2a;
+    --dark-gray: #555555;
+    --light-gray: #aaaaaa;
+    --white: #ffffff;
+    --red: #ff5555;
+    --green: #55ff55;
+    --yellow: #ffff55;
+    --cyan: #55ffff;
+    --page-width: 1040px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--black);
+    color: var(--light-gray);
+    font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  a { color: var(--cyan); }
+  a:hover { color: var(--white); }
+
+  .page {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  h1, h2, .logo {
+    font-family: "VT323", monospace;
+    font-weight: normal;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0 0 8px;
+  }
+
+  h2::before {
+    content: "> ";
+    color: var(--green);
+  }
+
+  h3 {
+    color: var(--white);
+    font-size: 17px;
+    margin: 0 0 6px;
+  }
+
+  section {
+    padding: 64px 0;
+    border-top: 1px dashed var(--line);
+  }
+
+  .lead {
+    color: var(--light-gray);
+    max-width: 680px;
+    margin: 0 0 32px;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 1px solid var(--line);
+  }
+
+  header .page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+
+  .logo {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  nav a {
+    color: var(--light-gray);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  nav a:hover { color: var(--white); }
+
+  .hero {
+    padding: 80px 0 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 104px;
+    line-height: 0.9;
+    margin: 0 0 8px;
+  }
+
+  .tagline {
+    color: var(--light-gray);
+    font-size: 18px;
+    margin: 0 0 28px;
+  }
+
+  .tagline strong { color: var(--yellow); font-weight: 600; }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 2px solid var(--white);
+    color: var(--black);
+    background: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .button:hover { background: var(--yellow); border-color: var(--yellow); color: var(--black); }
+
+  .button.outline {
+    background: transparent;
+    color: var(--white);
+  }
+
+  .button.outline:hover { color: var(--black); }
+
+  .boot-screen {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--light-gray);
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  .boot-screen .title { color: var(--white); }
+  .boot-screen .bar { color: var(--light-gray); }
+  .boot-screen .ok { color: var(--green); }
+
+  .cursor {
+    display: inline-block;
+    width: 9px;
+    height: 16px;
+    background: var(--green);
+    vertical-align: text-bottom;
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+figure {
+  margin: 0 auto; 
+
+}
+.screenshots figure:nth-child(odd) {
+  transform: translateX(-300px);
+}
+  figure img {
+    width: 160%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    display: block;
+    border: 1px solid var(--line);
+    background: var(--panel);
+  }
+
+  figcaption {
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-top: 6px;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .feature {
+    border: 1px solid var(--line);
+    padding: 20px;
+    background: var(--panel);
+  }
+
+  .feature p { margin: 0; font-size: 15px; }
+
+  .feature .icon {
+    font-family: "VT323", monospace;
+    font-size: 28px;
+    color: var(--yellow);
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+
+  code { color: var(--white); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+  }
+
+  td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  td:first-child {
+    color: var(--white);
+    width: 30%;
+    white-space: nowrap;
+  }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 32px 0 48px;
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+
+  footer .page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  @media (max-width: 1020px) {
+    .hero { grid-template-columns: 1fr; padding-top: 48px; }
+    .hero h1 { font-size: 72px; }
+    .boot-screen { font-size: 11px; padding: 14px; }
+    .features, .steps { grid-template-columns: 1fr; }
+    .screenshots { grid-template-columns: 1fr; }
+    .opponents { grid-template-columns: repeat(2, 1fr); }
+    nav a { margin-left: 12px; }
+    nav a.hide-on-phone { display: none; }
+    td:first-child { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+
+
+<header>
+  <div class="page">
+    <a class="logo" href="#">CHESSOS</a>
+    <nav>
+      <a href="#screenshots" class="hide-on-phone">Screenshots</a>
+      <a href="#features">Features</a>
+      <a href="https://github.com/O-Ayyad/chessos">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+
+  <div class="hero">
+    <div>
+      <h1>CHESSOS</h1>
+      <p class="tagline">A tiny 64-bit operating system that does <strong>one thing</strong>: play chess. <br><br>
+        No Windows, no Linux, no bloat!</p>
+      <div class="buttons">
+        <a class="button outline" href="https://github.com/O-Ayyad/chessos">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="boot-screen" aria-label="ChessOS start-up screen"><span class="title">CHESSOS BIOS v3.0</span>
+
+CPU ............ x86-64, 64-bit long mode, SSE2
+MEMORY ......... 105153K free
+VIDEO .......... 1024x768x32
+INPUT .......... PS/2 keyboard + mouse
+SOUND .......... AC'97
+MIDI ........... 6 songs
+
+<span class="title">LOADING ASSETS</span>
+<span class="bar">[██████████████████████████████] 100%</span>
+<span class="ok"> Chess OS ready.</span>
+
+PRESS ANY KEY TO CONTINUE <span class="cursor"></span></div>
+  </div>
+
+  <section id="screenshots">
+    <h2>Screenshots</h2>
+    <div class="screenshots">
+      <figure>
+        <img src="images/1.png">
+      </figure>
+      <figure>
+        <img src="images/2.png">
+      </figure>
+      <figure>
+        <img src="images/4.png">
+      </figure>
+      <figure>
+        <img src="images/3.png">
+      </figure>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p class="lead">Everything is written from scratch: the boot loader, the kernel, the graphics,
+      the sound driver, the music player and the chess engine.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">[BOOT]</div>
+        <h3>Its own boot loader</h3>
+        <p>Two small assembly programs take the PC from the BIOS to 64-bit mode and load the kernel.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">[3D]</div>
+        <h3>8 ways to look at the board</h3>
+        <p>Four views from above and four from the corners. The pieces are ASCII art,
+          programmatically drawn from 8 directions in 3 sizes.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">[AI]</div>
+        <h3>A real chess engine</h3>
+        <p>Alpha-beta search with a hash table and tuned evaluation. The strongest
+          opponents play at roughly 2450 Elo.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">[:-)]</div>
+        <h3>Opponents with faces</h3>
+        <p>22 characters from 200 to 3000 Elo. They greet you, taunt you, look scared when
+          they're getting mated, and laugh when they win.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">[&#9835;]</div>
+        <h3>Music</h3>
+        <p>A built-in MIDI synthesizer plays Beethoven, Mozart, Bach, Grieg and more
+          through the AC'97 sound card (or the PC speaker).</p>
+      </div>
+      <div class="feature">
+        <div class="icon">[&gt;_]</div>
+        <h3>Mouse or keyboard</h3>
+        <p>Click to move, or type <code>e2e4</code>, <code>Nf3</code> or <code>/move e8b</code>.
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="page">
+    <span>ChessOS</span>
+    <span><a href=https://github.com/O-Ayyad/chessos">github.com/O-Ayyad/chessos</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
