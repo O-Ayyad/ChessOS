@@ -11,6 +11,8 @@ folder: a boot loader written in assembly (`boot/`) and a kernel written in C++ 
 - **Replay** a finished game with B (back) and M (forward).
 - **MIDI music** (up to 8 songs) through the AC'97 sound card or the PC speaker.
 - The mouse and music keep working while the computer is thinking.
+- 
+<img width="1019" height="763" alt="1" src="https://github.com/user-attachments/assets/825e7972-4dd1-4213-adc0-a72bb8a7a5b3" />
 
 ## Running ChessOS
 
