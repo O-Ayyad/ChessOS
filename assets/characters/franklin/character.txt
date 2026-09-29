@@ -1,0 +1,15 @@
+name=Benjamin Franklin
+title=Founding Father
+elo=1800
+max=0
+greet=Good day! Shall we begin? | Sit, friend. I have played chess in Paris for too long. | Life is a kind of Chess.
+taunt=Little strokes fell great oaks. One pawn at a time. | Diligence is the mother of good luck. | Haste makes waste, my friend.
+humble=We must not be discouraged by present bad appearances. | You may delay, but time will not. | I didn't fail the test, I just found 100 ways to do it wrong. |
+win=Well done is better than well said. | A fine game. | Checkmate! Now, shall we play another? The night is young.
+lose=Splendid play! You have taught an old man something. | I concede, with gratitude for the lesson. | A worthy victory. I tip my hat to you.
+draw=Nothing is certain except death, taxes. | An honorable peace. Congress would approve. 
+shocked=What is this? | We many have forgotten to look a little into the future. | Lost time is never found again. | I'm shocked!
+scared=Like a kite in a thunderstorm, I feel a spark coming. | Caution now. I must not move too hastily.
+defeat=Well struck, like lightning from a clear sky! | I see it. Finish your move, friend.
+smirk=A penny saved is a penny earned! | I see green. | Look ahead, friend. Look ahead. | Involve me and I learn.
+victory=Being ignorant is not so much a shame, as being unwilling to learn. | And there it is!

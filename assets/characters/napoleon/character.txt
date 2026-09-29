@@ -1,0 +1,15 @@
+name=Napoleon Bonaparte
+title=Emperor of the French
+elo=1000
+max=0
+greet= Bonjour, a chessboard will not trouble me. | Take your positions. | The battle begins.
+taunt=Forward! Always forward! | Impossible is a word only found in the dictionary of fools. | My cannons are aimed. | To Moscow! 
+humble=A strategic retreat. | Hmm. This board is smaller than a battlefield. | The truest wisdom is a resolute determination.
+win=Vive l'Empereur! | Another victory! | If you want a thing done well, do it yourself. | I, the victor, will write this game. | Voila!
+lose= Exile... | The weather was against me. | My generals have failed me.
+draw=A treaty? Sure.
+shocked=Pardon? | Did not see that coming. | The academy did not teach me that. | A decoy?
+scared=Where are my reinforcements? | This looks like winter... | Traitor! | Scare bleu!
+defeat=It is just like Waterloo. | Sound the retreat! | The only one who is wiser than anyone is everyone.
+smirk=Victory belongs to the most persevering. | My army surrounds you.
+victory=Tell Paris! | The empire grows! | Oui oui!

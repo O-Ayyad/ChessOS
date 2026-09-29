@@ -1,0 +1,15 @@
+name=Zeus
+title=King of Olympus
+elo=2450
+max=1
+greet=Mortal. Olympus watches this game. | I will assess your strength, mortal.
+taunt=Even Kronos fared better. | Did you think you had a chance?
+humble=NOT AN ISSUE! | I DON'T STRUGGLE! | Don't forget who is above who.
+win=HA HA HA! I HAVE BESTED ALL! | KNEEL MORTAL! | PATHETIC
+lose=IMPOSSIBLE! | TO A MORTAL? | WHAT A RUDE PATRON! | TERRIBLE! TERRIBLE!
+draw=Boring...
+shocked=What an offering! | You mortals are so strange.
+scared=Not on my throne! | You won't do it, weakling.
+defeat=NO NO NO! | NOT WITH AN AUDIENCE! | Who do you think you are?
+smirk=Lightning will strike twice. | Observe. | Despair! | I will ruin you! | The end draws near...
+victory=SHOCKING ISN'T IT!! | LEARN MORTAL, LEARN!

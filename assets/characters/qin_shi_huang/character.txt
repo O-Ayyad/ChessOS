@@ -1,0 +1,15 @@
+name=Qin Shi Huang
+title=First Emperor of China
+elo=1200
+max=0
+greet=I united seven kingdoms. One board is nothing. | Kneel before the First Emperor, then make your move.
+taunt=My terracotta army is watching you. | I built a wall ten thousand li long. This is nothing. | All roads, all weights, all measures are mine. | Befriend the far, attack the near.
+humble=A worthy rival. Almost worthy of my court. | Hmm. My advisers did not warn me of this.
+win=All under heaven is mine! | Another kingdom united under the Qin! | Carve this victory in stone.
+lose=Bring me my mercury. I need another game. | My alchemists will hear of this. | I will not bow.
+draw=Two empires. For now.
+shocked=Treason! | Who let you past the Great Wall?
+scared=Guards! Summon the warriors! | We fight to the end! | The mandate of heaven is slipping... 
+defeat=My dynasty was meant to last ten thousand generations! | Seal the tomb... | I've lost my mandate to heaven.
+smirk=The emperor's will is law. | I have already planned your burial. | As sweet as mercury!
+victory=Checkmate! | Unification! | There is no mandate to heaven for you!
