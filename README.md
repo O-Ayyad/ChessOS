@@ -14,7 +14,12 @@ folder: a boot loader written in assembly (`boot/`) and a kernel written in C++ 
 
 ## Running ChessOS
 
-`make` builds two files. They hold the same system, packaged two ways:
+**Linux**
+```bash
+ sudo apt update
+ sudo apt install nasm
+ sudo apt install qemu-system
+ ```
 
 | File | Use it for |
 |---|---|
@@ -25,7 +30,7 @@ folder: a boot loader written in assembly (`boot/`) and a kernel written in C++ 
 
 ```bash
 make run    
-./run.sh        # Linux / macOS / WSL
+./run.sh        # Linux / macOS / WSL (sudo apt-get install qemu-system)
 run.bat         # Windows (QEMU for Windows must be installed and in path)
 ```
 
