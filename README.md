@@ -16,7 +16,7 @@ folder: a boot loader written in assembly (`boot/`) and a kernel written in C++ 
 
 ## Releases
 
-Download the latest version from the [Releases page](https://github.com/O-Ayyad/ChessOS/releases/latest).
+Download ChessOS binaries from the [Releases page](https://github.com/O-Ayyad/ChessOS/releases/latest).
 
 | Download | Use it for |
 |---|---|
@@ -24,7 +24,6 @@ Download the latest version from the [Releases page](https://github.com/O-Ayyad/
 | `chessos.img` | QEMU, `dd`, and writing to USB sticks |
 | `chessos.iso` | VirtualBox, VMware and Rufus. It can also boot from a USB stick. |
 
-See the [Releases page](https://github.com/O-Ayyad/ChessOS/releases) for what's new in each version.
 
 ## Running ChessOS
 
