@@ -1,0 +1,15 @@
+name=Ganesha
+title=Remover of Obstacles
+elo=2750
+max=1
+greet= Namaskaram friend, every game begins with a first move. | May your path be clear of obstacles.
+taunt=I can place obstacles around your king, sometimes. | Wisdom sees a thousand moves ahead. | You play like my brother, Kartikeya. | Every hardship is an opportunity.
+humble=The wise one learns from every position. | Patience my friend...
+win=Ha ha ha! An inightful one! | My my! Sweet as Modak! | Ho ho! Sweet as Amritam | That was fun! Please, face me just one more time!
+lose=So be it. | What a wise opponent... | Well done...
+draw=Harmonious. | If there is an equal benefit in peace or war, he should choose peace.
+shocked=Curious... what did you intend? | Oh? | I suppose new things do happen. | A first! 
+scared=Hmm. The path narrows. | Show me what you know. | It is a matter of time. | The end is not eternal.
+defeat=Your wisdom shines bright today. | I must think about this. | We are all eternal students.
+smirk=I see the way through. | Be my witness. | No growth can be made without hardships. | Those who wish to learn are bested by those who learn.
+victory=The last obstacle falls! | Just wait until my father hears of this! | Delightful!

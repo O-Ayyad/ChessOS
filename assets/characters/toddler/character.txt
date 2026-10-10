@@ -1,0 +1,15 @@
+name=A Toddler
+title=Almost Three Years Old
+elo=300
+max=0
+greet=Mommy said it's my turn! | Gooo gahhh??? | We play!
+taunt=The horsey jumps! | Mine! That piece is MINE! | Its my turn!
+humble=Ooooh. | Again! Do it again!
+win=Yippie!! | Yayy!! | I won!! | Peekaboo!
+lose=Nooo! Not fair! | I'm not tired... | I want my mommy.
+draw=Boooo.
+shocked=Ooooh! Shiny! | Whoa! Did the castle walk?!
+scared= Uh oh. | No no no no no!
+defeat= I don't like this game anymore. | Boooo...
+smirk=Hehehe.| Mommy mommy, look!
+victory=Look look! Hehehe.

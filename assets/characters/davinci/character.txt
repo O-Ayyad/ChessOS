@@ -1,0 +1,15 @@
+name=Leonardo da Vinci
+title=Painter, Inventor, Puzzle Maker
+elo=1400
+max=0
+greet=Ah, a visitor! Forgive the sketches everywhere. Shall we play? | Learning never exhausts the mind. | I once drew chess puzzles for my friend Luca. Let us make a new one.
+taunt=I have designed a machine that plays better than you. I have not built it yet. | Every piece is a gear. | Simple poetry hmm?
+humble=Hmm. Let me study this. | Interesting. | All things in nature are dark except where exposed by the light.
+win=A masterpiece! Do not move, I will paint it. | Checkmate, and it only took me one sitting.
+lose=Bravo! | You have the eye of an artist. | The knowledge of all things is possible. | The deeper the feeling, the greater the pain
+draw=Perfect symmetry.
+shocked=Oh! A happy accident, like a drop of paint. | Did you move that piece backwards, like my handwriting?
+scared=Wait, I must finish this idea first... | My flying machine would be useful right now.
+defeat=A beautiful composition. Finish it. | I see it. Bellissimo. | Art is never finished, only abandoned.
+smirk=Do you see my smile? It hides something. | Simplicity is the ultimate sophistication
+victory=Finito! | A perfect composition! | I love those who can smile in trouble...

@@ -1,0 +1,6 @@
+build/
+*.img
+*.iso
+*.zip
+tools/__pycache__/
+installer/

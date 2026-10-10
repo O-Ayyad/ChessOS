@@ -1,0 +1,15 @@
+name=Sun Tzu
+title=War Artist
+elo=2400
+max=0
+greet=Know yourself, know your enemy. | Every battle is won before it is fought.
+taunt=All warfare is based on deception. | When I appear weak, I am strong. | You fight the board. I fight you. | Let your plans be dark as night. Mine already are.
+humble=You read the terrain well. | Hmm. You have studied the classics. | The river is behind my army.
+win=The victorious general wins first, then goes to war. | As the scroll foretold. | Strategy without tactics is slow. You had neither.
+lose=Even water must sometimes yield. | A defeat is a lesson in thirteen chapters. | I will revise my scroll.
+draw=Wise. | Peace may be acceptable. | Evenly matched.
+shocked=Deception! | Unexpected!
+scared=Retreat is also a strategy... | On desperate ground, fight! | The general who loses heart loses the army.
+defeat=Outmaneuvered. | The King of Wu will hear of this... | My army is scattered.
+smirk=Appear where you are not expected. | The supreme art is to subdue without fighting. | Opportunities multiply as they are seized.
+victory=Soon! | It was won before it began! | Retreat this way!

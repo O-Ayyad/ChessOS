@@ -1,0 +1,15 @@
+name=Julius Caesar
+title=Dictator of Rome
+elo=600
+max=0
+greet=I came, I saw, I conqured. | Rome was not built in a day. | Alea iacta est
+taunt=The die is cast! Does that apply here? | In the end, it is impossible not to become what others believe you are.
+humble=Hmm. My pieces keep vanishing. | Blame it on the Senate. 
+win=Veni, vidi, vici! | Again, victorious! | Carve this into marble!
+lose=Et tu, bishop? | I love treason but hate a traitor. 
+draw=Me? Compromise?
+shocked=A gift! The gods favour Caesar! | Caesar takes it! Caesar takes everything!
+scared=Guards! Guards! | This feels like the Senate all over again.
+defeat=I love the name of honor more than I fear death? | With dignity. | Events of importance are the result of trivial causes.
+smirk=Caesar has a plan! A big one! | The legions are coming.
+victory=Experience is the teacher of all things. | Hail Caesar!
