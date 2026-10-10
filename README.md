@@ -10,11 +10,13 @@ folder: a boot loader written in assembly (`boot/`) and a kernel written in C++ 
 - **Type moves** (`e2e4`, `Nf3`, `/select e2` then `/move e4`) or **click and drag**.
 - **Replay** a finished game with B (back) and M (forward).
 
-<img width="1021" height="767" alt="" src="https://github.com/user-attachments/assets/e62c4650-11b8-40a8-924a-41ae3d8ac200" />
+<img width="1021" height="767" alt="menu" src="https://github.com/user-attachments/assets/43d617cb-c8af-4d87-90d5-74bea1f9d686" />
+
+<img width="1019" height="768" alt="" src="https://github.com/user-attachments/assets/badfb066-8689-4f56-aefd-ef9cc0576675" />
 
 ## Releases
 
-Download the latest version from the [Releases page](https://github.com/O-Ayyad/ChessOS/releases/latest).
+Download ChessOS binaries from the [Releases page](https://github.com/O-Ayyad/ChessOS/releases/latest).
 
 | Download | Use it for |
 |---|---|
@@ -22,7 +24,6 @@ Download the latest version from the [Releases page](https://github.com/O-Ayyad/
 | `chessos.img` | QEMU, `dd`, and writing to USB sticks |
 | `chessos.iso` | VirtualBox, VMware and Rufus. It can also boot from a USB stick. |
 
-See the [Releases page](https://github.com/O-Ayyad/ChessOS/releases) for what's new in each version.
 
 ## Running ChessOS
 
